@@ -11,7 +11,7 @@
   padding-top: 20px;
 }
 .reviewImage {
-  position: absolute;
+  position: absolute !important;
   z-index: -1;
   top: 0;
   left: 0;
