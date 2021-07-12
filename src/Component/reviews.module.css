@@ -1,0 +1,82 @@
+.review {
+  position: relative;
+  height: 80vh;
+}
+.review h2 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 20px;
+}
+.reviewImage {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 119, 199, 0.6);
+  background: radial-gradient(
+    circle,
+    rgba(0, 86, 199, 0.7) 0%,
+    rgba(0, 53, 199, 0.6) 35%,
+    rgba(0, 119, 199, 0.9) 100%
+  );
+  height: 80vh;
+}
+.backImg {
+  height: 80vh;
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.starRev {
+  background: white;
+  width: 50vw;
+  display: inline-block;
+  margin: 20px;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 10vh;
+}
+.starRev svg {
+  color: tomato;
+  font-size: 40px;
+  margin: 20px 0;
+}
+.starRev p {
+  padding: 20px;
+  white-space: normal;
+}
+
+.allReview {
+  white-space: nowrap;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+  height: 2px;
+  border-radius: 20px;
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  height: 1px;
+}
+
+.more {
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  margin: 60px;
+}
+.more a {
+  color: tomato;
+  font-weight: 800px;
+}

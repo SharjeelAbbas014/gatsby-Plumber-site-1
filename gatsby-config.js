@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "Marty's City Auto",
+    title: "Martys City Auto",
   },
   plugins: [
     "gatsby-plugin-image",
@@ -18,10 +18,9 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "images",
-        path: "./src/images/",
+        name: "background",
+        path: `${__dirname}/src/images`,
       },
-      __key: "images",
     },
   ],
 };
