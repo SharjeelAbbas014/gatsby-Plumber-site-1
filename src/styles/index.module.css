@@ -52,7 +52,7 @@
 .man {
   margin: 0 auto;
   width: 400px;
-  position: absolute;
+  position: absolute !important;
   right: 5vw;
   top: 10vh;
 }
