@@ -3,7 +3,10 @@
   height: 10vh;
   background: rgb(0, 119, 199);
 }
-
+.logo {
+  height: 6vh;
+  width: 100px;
+}
 .navbar_child {
   width: 70%;
   margin: 0 auto;
@@ -12,9 +15,27 @@
   align-items: center;
   justify-content: space-evenly;
 }
-
+.navLinks {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
 .navbar a {
   color: #fff;
   cursor: pointer;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 620px) {
+  .navbar_child {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar {
+    height: max-content;
+    padding: 20px;
+  }
+  .logo {
+    margin-bottom: 20px;
+  }
 }

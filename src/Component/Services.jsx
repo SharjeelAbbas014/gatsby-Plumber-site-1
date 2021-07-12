@@ -51,8 +51,9 @@ const Menu = (list, selected, icons) =>
   ));
 
 export default function Services() {
-  const menu = Menu(list, selected, icons);
   const [selected, setSelected] = useState("Drain Cleaning");
+
+  const menu = Menu(list, selected, icons);
   const onSelect = (key) => {
     setSelected(key);
   };
