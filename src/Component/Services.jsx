@@ -57,7 +57,7 @@ export default function Services() {
     setSelected(key);
   };
   return (
-    <div className={serviceStyle.serviceParent}>
+    <div className={serviceStyle.serviceParent} id="services">
       <h2 className={serviceStyle.name}>Services</h2>
       <div className={serviceStyle.parent}>
         <ScrollMenu

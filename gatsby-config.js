@@ -4,6 +4,7 @@ module.exports = {
     title: "Martys City Auto",
   },
   plugins: [
+    `gatsby-plugin-smoothscroll`,
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
@@ -18,8 +19,15 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "background",
+        name: "imag",
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `backgrounds`,
+        path: `${__dirname}/src/bg`, // wherever background images are stored
       },
     },
   ],
